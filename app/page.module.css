@@ -108,6 +108,26 @@
 .logo {
   position: relative;
 }
+
+.btncustom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.btncustom:hover {
+  background-color: var(--bs-primary); /* Primary color on hover */
+  color: white;
+}
+@media (min-width: 992px) { /* Hide on large screens and up */
+  .btncustom {
+      display: none;
+  }
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

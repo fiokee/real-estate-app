@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../page.module.css'
 import { FaLocationDot } from 'react-icons/fa6';
 
 const HomeListing = () => {
