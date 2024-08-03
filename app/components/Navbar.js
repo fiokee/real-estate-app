@@ -42,17 +42,17 @@ const Navbar = () => {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link href="/" legacyBehavior>
-                                    <a className="nav-link">Home</a>
+                                    <a className="nav-link font-weight-bold text-success">Home</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href='/add-listing' legacyBehavior>
-                                    <a className="nav-link">Add New Listing</a>
+                                    <a className="nav-link font-weight-bold text-success">Add New Listing</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href='/remove-listing' legacyBehavior>
-                                    <a className="nav-link">Remove Listing</a>
+                                    <a className="nav-link font-weight-bold text-warning">Remove Listing</a>
                                 </Link>
                             </li>
                         </ul>
