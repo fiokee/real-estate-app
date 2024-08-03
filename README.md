@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Real Estate Listings App
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This project is a simple real estate listings application where users can add, view, and remove property listings. The listings can be filtered by type (sale or rent) and searched by title. The app leverages local storage to save the listings data.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- Add new listings with title, description, location, price, rent, and image.
+- View all listings with filtering options (all, sale, rent).
+- Search listings by title.
+- Delete listings.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- Bootstrap
+- React icon (for icons)
+- Local Storage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/fiokee/real-estate-app
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Navigate to the project directory:
+
+    ```bash
+    cd real-estate-listings
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+4. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+
+1. **Add Listing**:
+    - Navigate to `/add-listing`.
+    - Fill in the details of the property and submit the form to add a new listing.
+
+2. **View Listings**:
+    - Navigate to the homepage `/` to view all listings.
+    - Use the filter options (All, Rent, Sale) to filter the listings.
+    - Use the search bar to find listings by title.
+
+3. **Remove Listings**:
+    - Navigate to `/remove-listing`.
+    - Click the "Delete" button next to a listing to remove it.
+
+## Components
+
+- **Navbar**: The navigation bar component.
+- **AddListing**: The component to add a new listing.
+- **RemoveListing**: The component to remove listings.
+- **HomeListing**: The component to display and filter/search listings.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
